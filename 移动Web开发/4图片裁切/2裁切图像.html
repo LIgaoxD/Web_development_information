@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			canvas{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="400" height="300"></canvas><br>
+		
+		<input type="button" id="cut" value="裁切图像" name="">
+		<script>
+			var oC=document.getElementById("myCanvas");  //获取元素
+			var oBtn=document.getElementById("cut");
+			var oCtx=oC.getContext("2d");		//准备环境
+			//绘制图像
+			// 添加一张图片  1. img  2. src引入
+			var oImg=new Image();
+			oImg.src="draw.jpg";
+			//绘制  图片加载完成  绘制
+			oImg.onload=function(){
+				oCtx.drawImage(oImg,0,0);	//  左上角   横 纵
+				
+			}
+			oBtn.onclick=function(){
+				// alert()
+				//清空画布
+				oCtx.clearRect(0,0,oC.width,oC.height);
+				
+				oCtx.arc(100,100,50,0,2*Math.PI,false);//  横   纵坐标  绘制曲线的半径  起始弧度  结束弧度  方向逆f 顺t
+				oCtx.clip();  //裁切
+				oCtx.drawImage(oImg,0,0);
+			}
+			
+			
+		</script>
+	</body>
+</html>

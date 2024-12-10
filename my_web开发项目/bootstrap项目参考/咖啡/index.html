@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+
+<!--Google Fonts-->
+<link href='http://fonts.bootcdn.cn/css?family=Ropa+Sans:400,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.bootcdn.cn/css?family=Courgette' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+</head>
+<body>
+<!--header start here-->
+<div class="header">
+   <div class="container">
+        <div class="header-main">
+			 <div class="logo">
+			   <a href="index.html"><img src="images/logo.png" alt=""></a>
+			 </div>
+            <div class="top-nav">
+            	<span class="menu"> <img src="images/icon.png" alt=""/></span>
+				<ul class="nav nav-pills nav-justified res">
+					<li><a class="active no-bar" href="index.html"><i class="glyphicon glyphicon-home"> </i>Home</a></li>
+					<li ><a class="icon" href="about.html"><i class="glyphicon glyphicon-star"> </i>About</a></li>
+					<li><a href="services.html"><i  class="glyphicon glyphicon-thumbs-up"> </i>Services</a></li>
+					<li><a href="blog.html"><i class="glyphicon glyphicon-picture"> </i>blog</a></li>
+					<li><a href="contact.html"><i class="glyphicon glyphicon-envelope"> </i>Contact</a></li>
+				</ul>
+				<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.res" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+			<!-- /script-for-menu -->
+			 </div>	
+     <div class="clearfix"> </div>
+   </div>	
+ </div>
+</div>
+<!--header end here-->
+<!--banner start here-->
+<div class="banner">
+  <div class="container">
+ 	<div class="banner-main">
+	  <section class="slider">
+           <div class="flexslider">
+             <ul class="slides">
+				   <li>
+					<p>high-end it is not we say high-end, high-end is my supervision, together witness.</p>
+				   </li>
+				   <li>
+					<p>With you, that will not share, sharing is not only delicious, is also happiness.</p>
+				  </li>
+				  <li>
+					<p>At the same time, we constitute a small circle, every man is the micro version of the circles.</p>
+				</li>
+          </ul>
+        </div>
+      </section>
+		<div class="copyrights"></div>
+	</div>
+</div>
+<!--FlexSlider-->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+</div>
+<!--banner end here-->
+<!--banner info start here-->
+<div class="bann-info">
+	<div class="container">
+		<div class="bann-info-main">
+			<div class="col-md-4 bann-info-grid">
+				<img src="images/b1.jpg" alt="" class="img-responsive">
+				<div class="ban-info-details">
+					<h3>夏威夷果</h3>
+					<p>Macadamia nuts</p>
+				</div>
+			</div>
+			<div class="col-md-4 bann-info-grid">
+				<img src="images/b2.jpg" alt="" class="img-responsive">
+				<div class="ban-info-details">
+					<h3>碧根果</h3>
+					<p>Pecans</p>
+				</div>
+			</div>
+			<div class="col-md-4 bann-info-grid">
+				<img src="images/b3.jpg" alt="" class="img-responsive">
+				<div class="ban-info-details">
+					<h3>开心果</h3>
+					<p>Pistachios</p>
+				</div>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--banner info end here-->
+<!-- nuts-online start here-->
+<div class="nuts-online">
+	<div class="container">
+		<div class="nuts-online-main">
+			 <h1>Welcome</h1>
+			 <h2>To Our Online Store</h2>
+			 <h4>high-end it is not we say high-end, high-end is my supervision, together witness.</h4>
+			 <p>With you, that will not share, sharing is not only delicious, is also happiness.At the same time, we constitute a small circle, every man is the micro version of the circles.</p>
+		     <a href="single.html"> <span class="glyphicon glyphicon-list-alt read" aria-hidden="true"> </span> </a>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--cnuts-online end here-->
+<!--nuts-bar start here-->
+<div class="nuts-bar">
+		<div class="nuts-bar-main">
+			<div class="col-md-6 nuts-bar-left">
+				
+			</div>
+			<div class="col-md-6 nuts-bar-right">
+				<h3>Wecaca food</h3>
+				<p>基于这样一个信仰：要实现为全人类寻找最优质，最新鲜，最健康的森林食品，我们必须明白，顾客第一的重要性，因为没有失去顾客而能活下来的企业；公司利益的重要性，时刻维护公司利益才能确保发展动力；员工利益的重要性，基于以上两点我们创造员工幸福指数。</p>
+			    <div class="nut-bar-btn">
+			    	<a href="single.html" class="hvr-bounce-to-bottom">Learn More</a>
+			    </div>
+			</div>
+			<div class="clearfix"> </div>
+		 </div>
+</div>
+<!--nuts-bar end here-->
+<!--culfy start here-->
+<div class="culfy">
+		<div class="culfy-main">
+			<div class="col-md-6 culfy-left">
+				<h4>1/1/2017</h4>
+				<h3>Wecaca food</h3>
+				<p>我们始终相信只有选择放弃，才是真正的失败，而选择坚持，意味着成功的可能，压力是成功最大的助推力，面对压力，唯有不懈，唯有坚持，成功，往往只是因为多挺了一会儿！</p>
+			    <div class="cull-btn">
+			    	<a href="single.html" class="hvr-bounce-to-bottom">Learn More</a>
+			    </div>
+			</div>
+			<div class="col-md-6 culfy-right">
+				
+			</div>
+			<div class="clearfix"> </div>
+		 </div>
+</div>
+<!--culfy end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+		   <div class="col-md-3 footer-grid">
+				<h3>Information</h3>
+				<ul>
+					<li><a class="active no-bar" href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="pages.html">Pages</a></li>
+					<li><a href="blog.html">blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		   </div>
+			<div class="col-md-3 footer-grid">
+				<h3>My Account</h3>
+				<p><a href="#">My Account</a></p>
+				<p><a href="contact.html">My Addresses</a></p>
+				<p><a href="#">My Cart</a></p>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h3>Contact Us</h3>
+				<h4>Wecaca</h4>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+			    <div class="ftr-cont">
+			    	<span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
+			    	<a href="#">mail@user.com</a>
+			    </div>
+			</div>
+			<div class="col-md-3 footer-grid">
+				<h3>Follow Us</h3>
+				<ul class="social-icon-ftr">
+					<li><a href="#"><span class="fa">  </span></a></li>
+					<li><a href="#"><span class="tw">  </span> </a></li>
+					<li><a href="#"><span class="p">  </span></a></li>
+				</ul>
+			</div>
+		<div class="clearfix"> </div>
+		<div class="copyright">
+		<p>Copyright &copy; 2016. The team of Wecaca</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+</body>
+</html>

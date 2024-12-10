@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#blurDiv {
+	
+	width: 877px;
+	height: 672px;
+	/* text-align: center; */
+	margin: 50px auto;
+	position: relative;
+	
+}
+#blurDiv p {
+	font-size:30px;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+}
+/* 这里调用一个filter函数，blur里面写的是数值必须带单位 */
+#blurImg {
+	width: 870px;
+	height: 672px;
+	filter: blur(20px);    /* 图片模糊 */
+	-webkit-filter: blur(20px);
+	z-index: 0;
+}
+#myCanvas {
+	/* border: 1px solid red; */
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	
+	z-index: 99;
+	
+}
+button {
+	width: 240px;
+	height: 60px;
+	font-size: 20px;
+	background: firebrick;
+	color: white;
+	border: none;
+	position: absolute;
+	
+	top: 110%; 					/* 到上面的距离 */
+}
+#reset {
+	left: 8%;
+}
+	
+#show {
+	right: 8%;
+}
+

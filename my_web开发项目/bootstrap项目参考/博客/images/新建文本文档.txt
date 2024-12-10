@@ -1,0 +1,42 @@
+callbacks_tabs 不可改颜色 定义了absolute 
+{
+做鼠标滑动效果
+背景色
+border3px}
+
+.More 
+
+
+所有的a link hover颜色都是#4597a8
+也做伪类
+
+
+background上统一白色文字
+
+bootstrap组件
+
+
+做完导航以后复制到各个页面做页头
+
+col-md-5 contact-section做contact us
+contact——footer里
+
+
+text-transform: capitalize;uppercase
+z-index
+line-height
+min-heright
+单位：em
+
+textimonials-section{
+
+了解-webkit
+
+    -moz-}
+
+
+social-icons
+做伪类
+颜色还是统一
+做由下往上
+定义position -数值px

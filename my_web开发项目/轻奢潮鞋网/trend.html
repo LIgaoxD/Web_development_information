@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 引入 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- 图标库 -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<!-- 基础库 -->
+		<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+		<script type="text/javascript" src="js/aajquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<title></title>
+
+		<!-- 样式 -->
+		<style>
+			/* 面包屑 */
+			/* 导航服务器字体 */
+			@font-face {
+				font-family: "show4";
+				src: url('fonts/title.ttf');
+			}
+
+			.breadcrumb P {
+				font-size: 32px;
+				font-family: "show4";
+				text-align: center;
+				font-weight: bolder;
+			}
+
+			.breadcrumb {
+				background-color: black;
+				margin-bottom: 0%;
+			}
+
+			/* end */
+
+			@font-face {
+				font-family: "title";
+				src: url('fonts/glyphicons-halflings-regular.ttf');
+			}
+
+			.navbar-nav li a {
+				font-family: "title";
+				font-weight: bolder;
+				font-size: 16px;
+			}
+
+			/* 框子 */
+			.form-group input {
+				width: 16px;
+				height: 28px;
+				border-radius: 2em;
+				opacity: 0.4;
+				box-shadow: 0 0 3px #aaa;
+				margin-right: 6px;
+			}
+
+			.carousel-inner img {
+				width: 100%;
+				height: 480px;
+			}
+
+			/* 横幅区 */
+			html,
+			body {
+				background-color: rgb(255, 255, 255);
+			}
+
+			.banner3 {
+				width: 100%;
+				padding: 0;
+				height: 18%;
+				background-image: url("img/sty/trend8.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: top center;
+			}
+
+			@font-face {
+				font-family: "show3";
+				src: url('fonts/Dosis-Regular-webfont.ttf');
+			}
+
+			@font-face {
+				font-family: "row2";
+				src: url('fonts/Courgette-Regular.ttf');
+			}
+
+			@font-face {
+				font-family: "row4";
+				src: url('fonts/RopaSans-Regular.ttf');
+			}
+
+			.banner3 h1 {
+				text-align: center;
+				font-family: "华文隶书";
+				font-weight: bolder;
+				font-size: 56px;
+				color: #aaa;
+			}
+
+			.banner3 h2 {
+				text-align: center;
+				font-weight: bold;
+				font-family: "华文隶书";
+				font-size: 36px;
+				color: #aaa;
+			}
+
+			.banner3 p {
+				text-align: center;
+				font-weight: bolder;
+				font-family: "楷体";
+				font-size: 16px;
+				color: #aaa;
+			}
+
+			/* 展示区 */
+			.row1 img {
+				height: 180px;
+				width: 380px;
+				border-radius: 6px;
+			}
+
+			.row1 {
+				margin-top: 46px;
+			}
+
+			.row4 img {
+				height: 160px;
+				width: 1320px;
+				border-radius: 3px;
+				margin: 12px 8px 12px 8px;
+			}
+
+			.row1 h2 {
+				font-size: 36px;
+				font-family: "row3";
+				font-weight: bolder;
+			}
+
+			.row1 h3 {
+				font-family: "row2";
+				font-weight: bold;
+				font-size: 24px;
+				color: brown;
+			}
+
+			.row3 h2 {
+				font-size: 36px;
+				font-family: "row3";
+				font-weight: bolder;
+			}
+
+			.row3 h4 {
+				font-family: "row2";
+				font-weight: bolder;
+				font-size: 20px;
+				color: brown;
+			}
+
+			.td1 {
+				font-weight: bold;
+				font-size: 18px;
+				font-family: "row3";
+				font-weight: bold;
+			}
+
+			.td2 {
+				font-family: "row4";
+				font-weight: bold;
+				font-size: 16px;
+				color: brown;
+			}
+
+			/* footer */
+			.footer {
+				text-align: center;
+				line-height: 32px;
+				background-color: #1d2124;
+				color: #aaa;
+				font-weight: bold;
+				font-family: "宋体";
+			}
+
+			.footer img {
+				width: 42px;
+				height: 42px;
+				border-radius: 66px;
+				margin-left: 16px;
+			}
+
+			.footer p {
+				margin-top: 32px;
+			}
+
+			.top {
+				position: -webkit-sticky;
+				/* 相对于浏览器窗口固定位置 */
+				position: sticky;
+				/* 粘性定位元素 */
+				left: 96%;
+				top: 45%;
+				background-color: black;
+				border: none;
+				border-radius: 6px;
+				z-index: 999;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 锚点 -->
+		<div id="topm"></div>
+		<button type="button" class="top"><a href="#topm" name="bottom"><img src="img/top.png" alt="" width="32px"
+					height="32px"></a></button>
+		<!-- 面包屑 -->
+		<ol class="breadcrumb">
+			<p>---Brand trends this year---</p>
+
+		</ol>
+		<!-- 导航start -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="#">
+						<img src="img/log.png" width="24" height="24" class="d-inline-block align-top" alt="">
+					</a>
+
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home page</a></li>
+						<li><a href="jordan.html">Jordan<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Nike</a></li>
+						<li><a href="#">MLB</a></li>
+						<li><a href="#">CONVERSE</a></li>
+						<li><a href="#">VANS</a></li>
+						<li><a href="#">PONY</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-left">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">专属定制<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">时尚女性</a></li>
+								<li><a href="#">男士轻奢</a></li>
+								<li><a href="#">联名定制</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">品牌趋势</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						<!-- 图标 -->
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</form>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- 导航end -->
+		<img src="img/sty/trend5.png" alt="">
+		<!--横幅开始-->
+		<div class="page-header" style="margin-top: 1%;">
+			<div class="banner3 container-fluid">
+				<h1>Be Fresh </h1>
+				<h2>Make you feel good all day.</h2>
+				<p>
+					-坚持全力以赴的精神-<br>
+					-持续破界 不断创新-<br>
+					-潮流不止一种方式-
+				</p>
+				<h2># 拥抱每一种可能 #</h2>
+			</div>
+		</div>
+		<!-- 横幅end -->
+
+
+		<!-- 展示区 -->
+
+		<div class="row1">
+			<div class="col-sm-7">
+				<h2>#MLB HEART-Find your tone</h2>
+				<hr />
+				<div class="row2">
+					<p style="color: darkred;font-size: 32px;text-align: center;font-family: show4;">-Show.Time-</p>
+					<div class="col-sm-12 col-md-12" class="bg-danger">
+						<video width="777px" height="" controls="controls" id="myVideo" autoplay="autoplay" loop="loop">
+
+							<source src="img/sty/mlb.mp4" type="video/mp4">
+							<source src="img/sty/mlb.mp4" type="video/ogg">
+							<source src="img/sty/mlb.mp4" type="video/webm">
+
+						</video>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5" style="text-align: center;">
+				<h2># UP-TO-DATE Jointly </h2>
+				<hr />
+				<blockquote>
+					<h3>JORDAN--Hoops is never done</h3>
+					<a href=""><img src="img/sty/trend9.png" alt=""></a>
+				</blockquote>
+				<hr />
+
+				<blockquote>
+					<h3>VANS--海贼王联名-Opening</h3>
+					<a href=""><img src="img/sty/trend7.png" alt=""></a>
+				</blockquote>
+				<ul class="pagination">
+					<li>
+						<a href="#">&laquo;</a>
+					</li>
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<a href="#">&raquo;</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<img src="img/sty/trend1.png" alt="" width="100%" height="500px" style="margin: 92px 0px 88px 0px;">
+		<div class="row3">
+			<div class="col-sm-9">
+				<h2>#HEART-STYLE in SNS </h2>
+				<hr>
+				<div class="row4">
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty1.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty2.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty3.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty4.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty5.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty6.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty7.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty8.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty9.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty10.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty11.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty12.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty13.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty14.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty15.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty16.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty17.png" class="img-responsive" />
+
+					</div>
+					<div class="col-sm-2 col-xs-6" class="bg-danger">
+						<img src="img/sty/sty18.png" class="img-responsive" />
+
+					</div>
+				</div>
+				<nav aria-label="">
+					<ul class="pager">
+						<li class="previous"><a href="#"><span aria-hidden="true"><i class="fa fa-arrow-circle-left"
+										aria-hidden="true"></i></span></a></li>
+						<li class="next"><a href="#"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><span
+									aria-hidden="true"></span></a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col-sm-3">
+				<h2>#This week's gifts</h2>
+				<hr>
+				<h4 style="text-align: center;">-JORDAN Ⅳ 高光时刻-</h4>
+				<a href=""><img src="img/jor lun/jor2.png" alt="" width="320px" height="250px"
+						style="margin-bottom: 18px;"></a>
+
+				<div class="panel panel-default" style="text-align: center;">
+					<!-- Default panel contents -->
+					<div class="panel-heading" style="font-family: show4; font-size: 22px; font-weight: bolder;">
+						-今日“绒”冬系列-</div>
+
+					<!-- Table -->
+					<table class="table">
+						<tr class="td1">
+							<td>#</td>
+							<td>Jordan</td>
+							<td>CONVERSE</td>
+							<td>MLB</td>
+						</tr>
+						<tr>
+							<td class="td1">1</td>
+							<td class="td2">Jordan Ⅰ</td>
+							<td class="td2">All Star Move</td>
+							<td class="td2">NY 洋基队</td>
+						</tr>
+						<tr>
+							<td class="td1">2</td>
+							<td class="td2">Jordan Ⅲ</td>
+							<td class="td2">Run Star Hike</td>
+							<td class="td2">B 波士顿</td>
+						</tr>
+						<tr>
+							<td class="td1">3</td>
+							<td class="td2">Jordan ⅩⅠ</td>
+							<td class="td2">Chuck</td>
+							<td class="td2">LA 洛杉矶</td>
+						</tr>
+					</table>
+				</div>
+
+
+			</div>
+		</div>
+
+		<img src="img/sty/trend6.png" alt="" style="margin-top: 111px;">
+		<!--footer start here-->
+		<div class="footer container-fluid">
+			<a href="https://vans.com.cn/"><img src="img/fo/fo1.png" alt=""></a>
+			<a href="https://www.converse.com.cn/"><img src="img/fo/fo2.png" alt=""></a>
+			<a href="https://www.nike.com/jordan"><img src="img/fo/fo3.png" alt=""></a>
+			<a href="https://www.nike.com/"><img src="img/fo/fo4.png" alt=""></a>
+			<a href="https://www.ponychina.com/"><img src="img/fo/fo5.png" alt=""></a>
+			<a href="https://www.mlb-korea.com/main/mall/view"><img src="img/fo/fo6.png" alt=""></a>
+			<p><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Copyrights © 2022 响应式网站&nbsp;<i
+					class="fa fa-google" aria-hidden="true"></i>&nbsp; Web :https://www.nike.com/jordan | 版权所有</p>
+		</div>
+		<!--footer end here-->
+		</div>
+	</body>
+</html>

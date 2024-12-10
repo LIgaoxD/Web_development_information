@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<title>header部分</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<style type="text/css">
+			/*设置body元素字体为Microsoft YaHei*/
+			body{
+				font-family: "microsoft yahei";
+			}
+			.head-top{
+				background: #5fa022;
+				padding: 0.8em 0;
+			}
+			.navbar-brand{
+				padding: 0;
+			}
+			/*设置图片logo的大小和位置*/
+			.navbar-brand>img{
+				height: auto;
+				margin-right: 5px;
+				margin-top: 5px;
+				width: 250px;
+			}
+			/*设置整个导航菜单的内边距、背景色和阴影*/
+			.navbar-default{
+				padding: 1.5em 0;
+				background-color: #f2f0f1;
+				box-shadow: 12px -5px 39px -12px;/*盒子阴影：水平方向12px 垂直方向-5px 模糊程度39px 阴影的尺寸-12px*/
+			}
+			/*设置导航栏中菜单a链接的样式*/
+			.navbar-default .navbar-nav>li a{
+				top: 10px;
+				padding: 0.5em 3em;
+				text-decoration: none;/*去除文本修饰*/
+				font-weight: 600;/*字体粗细*/
+				font-size: 1.2em;
+				color: #919191;
+			}
+			/*设置导航栏菜单的鼠标悬停和获取焦点时的状态*/
+			.navbar-default .navbar-nav>li >a:hover,
+			.navbar-default .navbar-nav>li >a:focus{
+				background: #d96b66;
+				color: white;
+				border-radius: 3px;
+			}
+			/*设置导航栏右侧a链接（0.00）的颜色*/
+			.navbar-right>a{
+				color: #d96b66;
+			}
+			/*媒体查询：当视口小于970px时，导航菜单字体变小，避免了换行的问题*/
+			@media (max-width: 970px) {
+				.navbar-default .navbar-nav>li a{
+					font-size: 1.1em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--header-->
+		<header>
+			<div class="head-top"></div><!--顶部的绿色横条-->
+			<!--添加一个容器<nav>标签，使用.navbar类和.navbar-default类-->
+			<nav class="navbar navbar-default">
+				<div class="container"><!--支持响应式的布局容器-->
+					<div class="navbar-header">
+						<div class="navbar-left">
+							<a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+							<span class="sr-only">汉堡按钮</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="#">主页</a></li>
+							<li><a href="#">餐厅</a></li>
+							<li><a href="#">健康</a></li>
+							<li><a href="#">话题</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+						<div class="navbar-right">
+							<a href="#">
+								<h3><span>￥0.00<img src="images/bag.png" alt="购物车"></span></h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<script src="js/jquery-1.11.0.min.js" ></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

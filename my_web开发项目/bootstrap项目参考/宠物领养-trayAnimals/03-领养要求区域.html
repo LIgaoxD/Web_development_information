@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- 1) 为了保证元素在移动端也能正常显示 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- 2) 导入bootstrap.css -->
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+			}
+
+			.display {
+				width: 100%;
+				/*display: flex;*/
+				padding: 10px;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				box-sizing: border-box;
+				background-color: blue;
+				/*margin-top: 30px;*/
+			}
+
+			.display-title {
+				margin-top: 30px;
+				text-align: center;
+				font-size: 25px;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+
+			@media screen and (max-width: 576px) {
+				.display-title {
+					font-size: 20px;
+				}
+			}
+
+			.item {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				background-color: skyblue;
+				padding: 0;
+			}
+
+			.item:nth-of-type(1) {
+				background-color: pink;
+			}
+
+			.item>p {
+				flex: 100%;
+				text-align: center;
+			}
+
+			.item>h2 {
+				font-size: 16px;
+			}
+
+			.item>p {
+				font-size: 14px;
+				margin-top: 10px;
+			}
+
+			li {
+				list-style: none;
+			}
+		</style>
+
+		<title>领养要求区域</title>
+	</head>
+
+	<body>
+		<!-- 领养要求区域 -->
+		<div class="container">
+			<div class="display-title">——— 领养流程 ———</div>
+			<div class="container display row">
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小狗1.png" alt="">
+					<p>领养人须年满22岁，有稳定的工作<br>，稳定的收入he住房（不符条件：未<br>满22岁/学生/合租/店铺不建议领养）</p>
+				</div>
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小猫1.png" alt="">
+					<p>领养人要爱护看护好动物，家里有<br>防护栏防护。领养宠物须在一年内<br>完成绝育和接受固定10次回访</p>
+				</div>
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小狗2.png" alt="">
+					<p>领养动物须在一年之内完成动物绝<br>育（请及时把绝育时的照片以及医<br>院票据发给回访人员，以便登记）</p>
+				</div>
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小猫2.png" alt="">
+					<p>领养人不得因为任何理由遗弃或私<br>下转送领养宠物，为方便回访管<br>理，领养人勿私下将领养猫带离主城。</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 3) jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.5.1.js"></script>
+
+		<!-- 4) 在Bootstrap4中很多的提示/弹窗都是通过popper.js来实现的，所以需要导入 -->
+		<!--<script src="js/bootstrap4/js/popper.js"></script>-->
+
+		<!-- 5) 加载 Bootstrap 的所有 JavaScript 插件。也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap/bootstrap.js"></script>
+	</body>
+
+</html>

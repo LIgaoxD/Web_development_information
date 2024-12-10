@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul{
+				list-style: none;
+			}
+			#ul1 li{
+				width: 200px;
+				float: left;
+				border: 2px solid #ccc;
+				margin: 5px;
+				
+				/* display: inline; */  /* 和float一样 */
+			}
+			#ul1 img{
+				width: 200px;
+			}
+			#ul1 p{
+				height: 40px;
+				border-bottom: 2px dashed #ccc;
+				text-align: center;
+			}
+			#cart{
+				width: 800px;
+				height: 400px;
+				border: 2px solid #ccc;
+				clear: both;
+				margin-left: 45px;
+				
+			}
+			.box p{
+				
+				border-bottom: 1px dashed #ccc;
+				height:40px;
+				
+			}
+			.box span{
+				text-align: center;
+				width: 180px;
+				display: inline-block;  /* 块级行显示 */
+				/* float: left; */
+			}
+			.box div{
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li draggable="true"> <!-- 可拖拽 -->
+				<img src="img/img1.jpg" alt="">
+				<p id="name">javascript语言精粹</p>
+				<p id="money">30￥</p>
+			</li>
+			<li draggable="true">
+				<img src="img/img2.jpg" alt="">
+				<p id="name">HTML5+CSS3</p>
+				<p id="money">50￥</p>
+			</li>
+			<li draggable="true">
+				<img src="img/img3.jpg" alt="">
+				<p id="name">javascript权威指南</p>
+				<p id="money">60￥</p>
+			</li>
+			<li draggable="true">
+				<img src="img/img4.jpg" alt="">
+				<p id="name">HTML5+CSS3+javascript</p>
+				<p id="money">45￥</p>
+			</li>
+		</ul>
+		
+		
+		<div id="cart" class="box">
+			
+		<!-- 
+		<p>
+			<span>javascript语言精粹</span>
+			<span>1</span>
+			<span>30￥</span>
+		</p>
+		
+		<p>
+			<span>HTML5+CSS3</span>
+			<span>1</span>
+			<span>50￥</span>
+		</p>	
+			<div>80￥</div>
+		</div> 
+		-->
+		
+		<script src="g1.js"></script>
+	</body>
+</html>

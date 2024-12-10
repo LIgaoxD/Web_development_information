@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--三个meta标签必须放在最前面，其他内容必须跟随其后。-->
+		<meta charset="utf-8" />
+		<!--此属性为文档兼容（compatible）模式声明，表示使用IE浏览器的最新渲染模式。-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--使用user-scalable=no 可以禁用其缩放， 根据设置确定视口宽度，device-width表示采用设备宽度，初始缩放1.0，最大缩放比例1.0-->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<title>footer部分</title>
+		<!--引入Bootstrap-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.footer p{
+				color: #FFFFFF;
+				font-size: 1em;
+				line-height: 1.8em;
+				vertical-align: middle;
+				margin: 0.4em 0;
+			}
+			.footer p a{
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+			.footer{
+				padding: 1em 0;
+				background-color: #D96B66;
+			}
+			.footer-right ul{
+				padding: 0;
+			}
+			.footer-right li{
+				display: inline-block;
+				margin: 0 1em;
+			}
+			.footer-left{
+				float: left;
+			}
+			.footer-right{
+				float: right;
+			}
+			/*设置字体图标的大小和颜色*/
+			.glyphicon{
+				font-size: 1.2em;
+				color: #F2F0F1;
+			}
+		</style>
+	</head>
+	<body>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-left">
+					<p>Copyrights &copy; 2016 Bootstrap响应式餐饮网站 | 版权所有<a href="#"></a></p>
+				</div>
+				<div class="footer-right">
+					<ul>
+						<li><a href="#"><i class="glyphicon glyphicon-phone-alt">&nbsp;联系我们</i></a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-map-marker">&nbsp;公司地址</i></a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-question-sign">&nbsp;服务声明</i></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!--Bootstrap 的 JavaScript 插件需要引入 jQuery-->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<!--包括所有已编译的插件-->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

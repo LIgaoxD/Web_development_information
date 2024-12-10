@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>认识容器类</title>
+		<meta charset="utf-8">
+		<!--1)定义视口,保证元素在移动端也能正常显示 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--2)导入bootstrap.css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--注释掉此行看变化-->
+
+		<!--3)导入jQuery (有些JS插件依赖 jQuery，jQuery的导入必须放JS的导入之前) -->
+		<script src="js/jquery-3.6.1.min.js"></script>
+
+		<!--4)导入JS -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			div {
+				background-color: pink;
+				margin-top: 50px;
+				/*width: 200px;*/
+				height: 200px;
+				
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div>未赋予容器类的盒子</div>
+		<div class="container">赋予.container类的盒子</div>
+		<div class="container_fluid">赋予.container_fluid类的盒子</div>
+	</body>
+
+</html>

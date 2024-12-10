@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<!-- 1) 为了保证元素在移动端也能正常显示 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- 2) 导入bootstrap.css -->
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+		<!-- 导入首页样式文件 -->
+		<link rel="stylesheet" href="css/myIndex.css">
+
+		<title>Bootstrap流浪动物首页.html</title>
+	</head>
+	<body>
+		<!-- header区域 -->
+		<div class="container-fluid header">
+			<nav class="navbar navbar-expand-md navbar-light bg-light myNav container">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png" alt="" style="width: 60px;height: 60px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse myNavBar" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active mr-5">
+							<a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item mr-4">
+							<a class="nav-link" href="#">领养队伍</a>
+						</li>
+						<li class="nav-item mr-4">
+							<a class="nav-link" href="#">关于我们</a>
+						</li>
+						<li class="nav-item mr-4">
+							<a class="nav-link" href="#">新闻中心</a>
+						</li>
+						<li class="nav-item mr-4">
+							<a class="nav-link" href="#">公益项目</a>
+						</li>
+						<li class="nav-item mr-4">
+							<a class="nav-link" href="#">联系我们</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+		<!-- carousel区域 -->
+		<div class="search">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" style="background-image: url('./images/swiper1.png')">
+						<img src="./images/swiper1.png" alt="" style="opacity: 0">
+					</div>
+					<div class="carousel-item" style="background-image: url('./images/swiper2.png')">
+						<img src="./images/swiper2.png" alt="" style="opacity: 0">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Animal展示区域 -->
+		<div class="container">
+			<div class="display-title">——— 领养流程 ———</div>
+			<div class="container display row">
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小狗1.png" alt="">
+					<p>领养人须年满22岁，有稳定的工作<br>，稳定的收入he住房（不符条件：未<br>满22岁/学生/合租/店铺不建议领养）</p>
+				</div>
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小猫1.png" alt="">
+					<p>领养人要爱护看护好动物，家里有<br>防护栏防护。领养宠物须在一年内<br>完成绝育和接受固定10次回访</p>
+				</div>
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小狗2.png" alt="">
+					<p>领养动物须在一年之内完成动物绝<br>育（请及时把绝育时的照片以及医<br>院票据发给回访人员，以便登记）</p>
+				</div>
+				<div class="item col-12 col-lg-3">
+					<img src="./images/小猫2.png" alt="">
+					<p>领养人不得因为任何理由遗弃或私<br>下转送领养宠物，为方便回访管<br>理，领养人勿私下将领养猫带离主城。</p>
+				</div>
+			</div>
+		</div>
+
+		<ul class="nav nav-pills container hot top">
+			<li class="active" role="presentation"><a href="#dog" role="tab" data-toggle="pill"></a></li>
+			<li role="presentation"><a href="#cat" role="tab" data-toggle="pill"></a></li>
+		</ul>
+		<div class="tab-content container">
+			<ul id="dog" class="bottom active tab-pane">
+				<li>
+					<img src="./images/1.png" alt="">
+				</li>
+				<li>
+					<img src="./images/2.png" alt="">
+				</li>
+				<li>
+					<img src="./images/3.png" alt="">
+				</li>
+				<li>
+					<img src="./images/4.png" alt="">
+				</li>
+				<li>
+					<img src="./images/5.png" alt="">
+				</li>
+				<li>
+					<img src="./images/6.png" alt="">
+				</li>
+				<li>
+					<img src="./images/7.png" alt="">
+				</li>
+				<li>
+					<img src="./images/8.png" alt="">
+				</li>
+			</ul>
+			<ul id="cat" class="bottom tab-pane">
+				<li>
+					<img src="./images/9.png" alt="">
+				</li>
+				<li>
+					<img src="./images/10.png" alt="">
+				</li>
+				<li>
+					<img src="./images/11.png" alt="">
+				</li>
+				<li>
+					<img src="./images/12.png" alt="">
+				</li>
+				<li>
+					<img src="./images/13.png" alt="">
+				</li>
+				<li>
+					<img src="./images/14.png" alt="">
+				</li>
+				<li>
+					<img src="./images/15.png" alt="">
+				</li>
+				<li>
+					<img src="./images/16.png" alt="">
+				</li>
+			</ul>
+		</div>
+
+		<!-- 横幅区域 -->
+		<div class="banners container-fluid"></div>
+
+		<!-- footer区域 -->
+		<div class="footer container-fluid">
+			<p>Copyrights © 2022 Bootstrap响应式流浪动物网站 | 版权所有</p>
+		</div>
+
+		<!-- 3) jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.5.1.js"></script>
+
+		<!-- 4) 在Bootstrap4中很多的提示/弹窗都是通过popper.js来实现的，所以需要导入 -->
+		<!--<script src="js/bootstrap4/js/popper.js"></script>-->
+
+		<!-- 5) 加载 Bootstrap 的所有 JavaScript 插件。也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap/bootstrap.js"></script>
+		<script>
+			$('.carousel').carousel({
+				// 修改自动轮播时间
+				interval: 2000
+			})
+
+			// 根据点击索引切换Animal展示区域内容
+			$(".top li").click(function() {
+				let index = $(this).index()
+				// 给当前点击项添加active类名呈现绿色背景并去除其兄弟元素的active类名隐藏绿色背景
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+		</script>
+	</body>
+</html>

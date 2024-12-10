@@ -1,0 +1,65 @@
+#navbar{
+    height: 60px;                    /*定义高度*/
+    box-shadow: 0 1px 10px red;      /*定义阴影效果*/
+}
+.list{
+    height: 50px;                    /*定义高度*/
+}
+.nav-list li{
+    margin-left: 10px;               /*定义左边外边距*/
+}
+.nav-list li:hover{
+    border-bottom: 2px solid white;   /*定义底边边框*/
+}
+.iconColor a{
+    color: white;                   /*定义字体颜色*/
+}
+.iconColor a:hover i{
+    color:red;                       /*定义字体颜色*/
+    transform: scale(1.5);           /*定义2d缩放*/
+ }
+/*首页样式*/
+.img-b{
+    background: url("images/0002.jpg") no-repeat;   /*定义背景图片，不平铺*/
+    background-size: 1150px 568px;                 /*定义背景图片的大小*/
+}
+.jumbotron{
+    height:500px;                           /*定义高度*/
+    background: rgba(0,0,255,0.6);          /*定义rgba背景色*/
+}
+/*我们的团队*/
+.bg1{
+    background:  #7870E8;                /*定义背景色*/
+    padding:30px 0;                     /*定义内边距*/
+}
+.i-circle{
+    padding: 20px 22px;                 /*定义内边距*/
+    background:white;                   /*定义背景颜色*/
+    color: #7870E8;                    /*定义字体颜色*/
+}
+.i-circle1{
+    padding: 20px 35px;                 /*定义内边距*/
+    background:white;                    /*定义背景色*/
+    color: #7870E8;                      /*定义字体颜色*/
+}
+.i-circle:hover{
+    transform: scale(1.1);              /*定义2d缩放*/
+}
+.i-circle1:hover{
+    transform: scale(1.1);               /*定义2d缩放*/
+}
+img{
+    transition: all 0.2s ease-in;          /*定义过渡动画*/
+}
+img:hover{
+    transform: scale(1.1);              /*定义2d缩放*/
+}
+p{
+    text-indent: 2em;                    /*首行缩进2字符*/
+}
+.active{
+    border-bottom: 2px solid red;         /*定义底边边框*/
+}
+
+
+

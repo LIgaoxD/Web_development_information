@@ -1,0 +1,12 @@
+body{
+    background: #f8f8f8;
+}
+/*导航栏*/
+.navbar {
+    background-color: rgb(234, 232, 235) !important;
+}
+.form-control {
+    border-radius: 50px;
+}
+
+.two{margin-top: 51px!important;}

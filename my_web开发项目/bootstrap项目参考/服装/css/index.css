@@ -1,0 +1,219 @@
+body{
+    background: #f8f8f8;
+}
+/*导航栏*/
+.navbar {
+    background-color: rgb(234, 232, 235) !important;
+}
+.form-control {
+    border-radius: 50px;
+}
+
+
+
+
+
+/*two大块*/
+.two {
+    /*border: 2px rgb(234, 232, 235) solid;*/
+    margin-top: 58px;
+    /*border-radius: 20px;*/
+}
+
+/*zuo块*/
+
+
+
+.zuo ul {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.zuo ul li {
+    margin-top: 10px;
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.zuo .zhuti {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #e87a2b;
+}
+
+.zuo ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+/*middle块*/
+.middle {
+
+}
+
+/*轮播图*/
+#carousel-example-generic {
+    margin-top: 10px;
+}
+
+
+/*imgLabel*/
+/*phone*/
+#carousel-example-generic img {
+    width: 100%;
+}
+
+.lianjie {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.imgLabel img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgLabel p {
+    margin-top: 10px;
+    font-family: 新宋体;
+    font-weight: bolder;
+    font-size: 16px;
+    color: red;
+
+}
+
+.space1 {
+    display: inline-block;
+}
+
+.space2 {
+    display: inline-block;
+
+}
+
+
+/*右边*/
+.you {
+
+    width: 310px;
+    /*border: #0b2e13 1px solid;*/
+}
+
+/*定时器*/
+.interval {
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.interval .date, .hour, .minute, .second {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.interval .font {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cuXiao {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+
+}
+
+.activity {
+    background-color: red;
+    height: 220px;
+}
+
+.you img{
+    display: inline-block;
+    margin-top: 20px;
+    width: 278px;
+    height: 314px;
+}
+.secondZuo{
+    margin-top:10px!important;
+}
+
+.three{
+
+}
+
+.loveList{
+    overflow: hidden;
+
+}
+
+
+.loveList h4{
+    font-size: 16px;
+    overflow: hidden;
+    height: 18px;
+}
+.three h2{
+    color: #ecb846;
+    padding-left: 18px;
+}
+
+
+.four{
+    margin-left: 0!important;
+}
+
+.four ul li {
+
+    margin-top: 10px;
+    font-size: 15px;
+    color: gray;
+    margin-left: 20px!important;
+    line-height: 30px;
+
+}
+.four ul {
+    list-style: none;
+    margin-left: -30px;
+}
+.four .zhuti {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #e87a2b;
+}
+.four ul li a {
+    text-decoration: none;
+    color: gray;
+}
+.houzhui{
+    color: #f5d667;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hezuo{
+    text-align: center;
+    color: #9d9d9d;
+    font-size: 25px;
+}

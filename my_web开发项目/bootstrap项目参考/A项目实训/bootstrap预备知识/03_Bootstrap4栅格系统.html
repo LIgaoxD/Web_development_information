@@ -1,0 +1,68 @@
+<!DOCTYh4E html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-3.6.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>认识栅格系统</title>
+		
+		<style type="text/css">
+			.container {
+				border: 3px solid green;
+				margin-top: 50px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<h4>手机 (<576px)</h4>
+			<div class="row">
+				<div class="col-4" style="background-color:lavender;">.col-4</div>
+				<div class="col-8" style="background-color:lavenderblush;">.col-8</div>
+			</div>
+			<h4>平板 (≥576px)</h4>
+			<div class="row">
+				<div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+				<div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+			</div>
+			<h4>中等桌面 (≥768px</h4>
+			<div class="row">
+				<div class="col-md-4" style="background-color:lavender;">.col-md-4</div>
+				<div class="col-md-8" style="background-color:lavenderblush;">.col-md-8</div>
+			</div>
+			<h4>大桌面(≥992px)</h4>
+			<div class="row">
+				<div class="col-lg-4" style="background-color:lavender;">.col-lg-4</div>
+				<div class="col-lg-8" style="background-color:lavenderblush;">.col-lg-8</div>
+			</div>
+			<h4>超大桌面(≥1200px)</h4>
+			<div class="row">
+				<div class="col-xl-4" style="background-color:lavender;">.col-xl-4</div>
+				<div class="col-xl-8" style="background-color:lavenderblush;">.col-xl-8</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h4>一列对应不同屏幕大小可分配多个类</h4>
+			<div class="row">
+				<div class="col-sm-6 col-md-3 col-lg-9" style="background-color:lightblue;">col-sm-6 col-md-3 col-lg-9</div>
+				<div class="col-sm-6 col-md-9 col-lg-3" style="background-color:yellow;">col-sm-6 col-md-9 col-lg-3</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<h4>加起来多与12列的情况</h4>
+			<div class="row">
+				<div class="col-sm-6 col-md-3 col-lg-9" style="background-color:lightblue;">col-sm-6 col-md-3 col-lg-9</div>
+				<div class="col-sm-7 col-md-10 col-lg-4" style="background-color:yellow;">col-sm-7 col-md-10 col-lg-4</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
